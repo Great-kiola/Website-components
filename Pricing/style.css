@@ -26,7 +26,7 @@ body{
     border-radius: 8px;
     padding: 20px;
     width: 350px;
-    height: 250px;
+    min-height: 250px;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -90,13 +90,154 @@ body{
     color: #fff;
 }
 
+
+.plane{
+    color: #fff;
+    background-color: #1751D0;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 15px;
+    margin-left: 10px;
+    width: 45px !important;
+}
+
+.email{
+    border-radius: 8px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #e6e6e6;
+    position: relative;
+}
+
+hr{
+    border: 1px solid #e6e6e6;
+    width: 350px;
+    margin: 10px;
+}
+
+.peoplesDiv{
+    width: 100%;
+}
+
+.fileAcess{
+    margin-top: 7px;
+    background-color: #F5F5F5;
+    width: 100%;
+    border-radius: 10px;
+    height: 50px;
+    padding: 28px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-users{
+    margin-top: 7px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 7px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-users h2{
+    font-size: .7rem;
+    color: #1751D0;
+    font-weight: 500;
+}
+
+.globe-div{
+    display: flex;
+    align-items: center;
+}
+
+.globe-div ul{
+    list-style: none;
+    font-size: .7rem;
+    margin-left: 10px;
+    line-height: 1.3;
+}
+
+.globe-div ul li.bold{
+    font-weight: 700;
+}
+
+.globe-div ul li.mail{
+    font-weight: 400;
+    opacity: 45%;
+}
+
+label{
+    width: 36px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: #c9c9cc;
+    position: relative;
+    cursor: pointer;
+}
+
+.number{
+    background-color: #C9C9CC;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin-left: -7px;
+    font-size: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.number2{
+    background-color: #ff7135;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin-left: -7px;
+    font-size: .6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold
+}
+
+label::before{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    top: 4px;
+    left: 5px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+label.active:before{
+    left: 20px;
+}
+
+label.active{
+    background-color: #000;
+}
+
+
+.email:focus{
+    outline: none;
+}
+
 .btnDiv{
+    width: 100%;
     display: flex;
 }
 
 
 .mybtn{
-    width: 50%;
+    width: 100%;
     padding: 9px;
     margin-right: 10px;
     cursor: pointer;
@@ -115,12 +256,14 @@ h1{
 
 p{
     font-size: .75rem;
+    text-align: left;
 }
 
 img{
     border-radius: 50%;
     width: 30px;
     border: 2.5px solid #fff;
+    z-index: 1;
 }
 
 .users{
@@ -128,6 +271,8 @@ img{
     margin-top: -15px;
     display: flex;
     padding: 10px 0px;
+    align-items: center;
+
 }
 
 .names{
@@ -137,6 +282,7 @@ img{
 .users .names h2{
     font-weight: 500;
     font-size: .6rem;
+    line-height: 1.2;
 }
 
 .pad{
