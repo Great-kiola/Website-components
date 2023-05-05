@@ -161,6 +161,8 @@ hr{
 
 .globe-div ul li.bold{
     font-weight: 700;
+    display: flex;
+    align-items: center;
 }
 
 .globe-div ul li.mail{
@@ -235,6 +237,12 @@ label.active{
     justify-content: center;
     color: #fff;
     font-weight: bold
+}
+
+.verify{
+    width: 15px;
+    color: red;
+    margin-left: 3px;
 }
 
 .mybtn{
