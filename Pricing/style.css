@@ -241,9 +241,12 @@ label.active{
 
 .verify{
     width: 15px;
-    color: red;
     margin-left: 3px;
+    fill: rgb(241,0,0);
+    
 }
+
+
 
 .mybtn{
     width: 100%;
