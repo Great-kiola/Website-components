@@ -177,7 +177,7 @@ label{
     background-color: #c9c9cc;
     position: relative;
     cursor: pointer;
-    transition: 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 label::before{
@@ -189,7 +189,7 @@ label::before{
     top: 4px;
     left: 5px;
     border-radius: 25px;
-    transition: .8s ease;
+    transition: .4s ease;
 }
 
 label.active:before{
